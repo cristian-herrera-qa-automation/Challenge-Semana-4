@@ -124,13 +124,13 @@ curl -X POST http://localhost:8000/ask \
 
 ```mermaid
 flowchart LR
-    A[/ask] --> B{¿Lenguaje<br/>inapropiado?}
-    B -->|Sí| C[🚫 Bloquear]
-    B -->|No| D[Embedding<br/>de la pregunta]
-    D --> E[Búsqueda<br/>en Chroma]
-    E --> F{¿Score ><br/>umbral?}
-    F -->|No| G[⚠️ Sin información<br/>suficiente]
-    F -->|Sí| H[🤖 LLM responde<br/>con el contexto]
+    A["/ask"] --> B{"¿Lenguaje<br/>inapropiado?"}
+    B -->|Sí| C["🚫 Bloquear"]
+    B -->|No| D["Embedding<br/>de la pregunta"]
+    D --> E["Búsqueda<br/>en Chroma"]
+    E --> F{"¿Score ><br/>umbral?"}
+    F -->|No| G["⚠️ Sin información<br/>suficiente"]
+    F -->|Sí| H["🤖 LLM responde<br/>con el contexto"]
 ```
 
 ---

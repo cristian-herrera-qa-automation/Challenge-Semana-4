@@ -1,0 +1,12 @@
+# Claves y secretos - NUNCA subir
+.env
+
+# Base vectorial local (se regenera sola)
+chroma_data/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+venv/
+.venv/
